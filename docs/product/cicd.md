@@ -53,3 +53,53 @@ Continuous delivery is a practice that allows repetitive deployment of different
 
 
 ## Pipelines and Branching Models
+
+ The size and complexity of code bases, number of developers and amount of automated testing available often drives the branching pattern used in release management of a software product. The CI/CD pipelines can be tailored to fit the branching needs of a development team.
+
+ The recommended branching model to get maximum productivity and shortest release time is the master only model with feature flags.
+
+ * All commits on the main line go through build, deploy and test stages and are either dropped or queued up for production.
+ * For testing changes before merging/integrating to master, builds can also be triggered on pull request branches.
+ * Pull requests also allow for peer review before merging to master to keep the master healthy.
+
+ This model works well for micro-services, small code bases, and small development teams that follow good agile, tdd, feature flag, and devops practices and which are on the cloud. This however, does not support monolithic code bases, large development teams with long standing releases, teams that do not have much automated testing, or teams that have limited environments/hardware in traditional data centers.
+
+ Some branching models and pipelines associated are described below:
+
+ </br>
+ </br>
+ </br>
+
+ ![](./images/singlecodeline.png)
+
+ </br>
+ </br>
+ </br>
+
+![](./images/multicodeline.png)
+
+</br></br>
+
+## Build automation
+</br>
+** Coming Soon **
+</br>
+
+</br></br>
+## Deploy automation
+</br>
+** Coming Soon **
+</br>
+
+</br></br>
+
+## Infrastructure provisioning
+</br>
+** Coming Soon **
+</br>
+
+## Containerization and orchestration
+
+</br>
+** Coming Soon **
+</br>
