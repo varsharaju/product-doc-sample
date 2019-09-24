@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>CICD - DevOps and Developer Productivity</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">DevOps and Developer Productivity</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">CICD</a>
+</li>
+                                    
+<li >
+    <a href="../build.md">Build Automation</a>
+</li>
+                                    
+<li >
+    <a href="../deploy.md">Deploy Automation</a>
+</li>
+                                    
+<li >
+    <a href="../infrastructure/">Infrastructure Provisioning</a>
+</li>
+                                    
+<li >
+    <a href="../containers/">Containerization and orchestration</a>
+</li>
+                                    
+<li >
+    <a href="../operations.md">Monitoring and High Availability</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../partners/jenkins.md">Jenkins</a>
+</li>
+                                    
+<li >
+    <a href="../../partners/puppet.md">Puppet</a>
+</li>
+                                    
+<li >
+    <a href="../../partners/chef.md">Chef</a>
+</li>
+                                    
+<li >
+    <a href="../../partners/aws.md">AWS</a>
+</li>
+                                    
+<li >
+    <a href="../../partners/containers.md">Kubernetes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customers <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../projects/traditional.md">Traditional Data Center</a>
+</li>
+                                    
+<li >
+    <a href="../../projects/cicd.md">CICD</a>
+</li>
+                                    
+<li >
+    <a href="../../projects/cloud-migration.md">Migrating to Cloud</a>
+</li>
+                                    
+<li >
+    <a href="../../projects/docker.md">Containerization and Kubernetes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Training <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../training/presentations/">Presentations</a>
+</li>
+                                    
+<li >
+    <a href="../../videos.md">Videos</a>
+</li>
+                                    
+<li >
+    <a href="../../tutorials.md">Tutorials</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../support/help/">Contact and Feedback</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../infrastructure/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/varsharaju/devops/edit/master/docs/product/cicd.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#cicd">CI/CD</a></li>
+            <li><a href="#continuous-integration">Continuous Integration</a></li>
+            <li><a href="#continuous-delivery-and-deployment">Continuous Delivery and Deployment</a></li>
+            <li><a href="#pipelines-and-branching-models">Pipelines and Branching Models</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="cicd">CI/CD</h1>
+<p>CI/CD or Continuous Integration and Continuous Delivery and Deployment is a DevOps practice that aims at shortening time to market of new features and changes in a software product and improving developer productivity by automating the entire software release process from conception to delivery.</p>
+<ul>
+<li>Continuous Integration focuses on enabling teams to continuously integrate changes to main line, test them multiple times a day, and recover quickly from failures with consistent feedback loop.</li>
+<li>Continuous Delivery focuses on enabling teams to automatically deliver specific versions of the product to different environments and go through a set of tests.</li>
+<li>Continuous Deployment focuses on enabling teams to go automatically from code commit to production using the continuous integration and continuous delivery solutions along with promotion criteria that defines the readiness of the change to be released through a set of stages and finally to production</li>
+</ul>
+<p>The main outcome of this practice is a CI/CD pipeline which continuously builds, deploys, tests, and promotes or drops changes through a set of stages before releasing it to production. A CI/CD pipeline highlighting Continuous Integration, Delivery, and Deployment is given in the diagram below:</p>
+<p><img alt="" src="../images/cicd.png" /></p>
+<p></br>
+</br></p>
+<h2 id="continuous-integration">Continuous Integration</h2>
+<p>Continuous integration allows integration of code changes to the main line multiple times a day and allows for fast recovery by automatically building and testing these changes and providing constant and quick feedback to the committers. The outcome of Continuous Integration is a versioned deployable artifact that is stored in an artifact repository for consumption later by other services or for deployment. The main components of continuous integration are</p>
+<ul>
+<li>Continuous merges: Done using version control tools like Github, Perforce</li>
+<li>Automated builds : Done using standard build tools like Maven, Gradle, make, docker (for containers)</li>
+<li>Automated testing : Done using tools like junit</li>
+<li>Code Coverage calculation : Done using tools like JaCoCo and Cobertura</li>
+<li>Static Code Analysis : Done using tools like Checkstyle, Findbugs etc.</li>
+<li>Promotion Criteria, Change Monitoring, and Feedback Loop : Done using CI tools like Jenkins</li>
+<li>Artifact Storage: Done using tools like Nexus, Artifactory, Docker hub, PyPi etc.
+</br>
+</br>
+</br>
+<img alt="" src="../images/ci.png" />
+</br>
+</br>
+</br></li>
+</ul>
+<h2 id="continuous-delivery-and-deployment">Continuous Delivery and Deployment</h2>
+<p>Continuous delivery is a practice that allows repetitive deployment of different versions of the application/service to different environments in a consistent and fail-safe way for testing. The deployment includes install and configuration of the new version of the software to support different hardware and testing requirements. A continuous delivery pipeline automatically deploys product artifacts created by the build stage to various environments and runs automatic tests on the application. It also automatically uses the test results to validate promotion criteria and promote the build to the next environment. While promotion to preproduction environments is automatic, the promotion to production is manual. A continuous deployment pipeline will also look the same with the exception that promotion to production is automatic and not manual. Main components of Continuous Delivery and Deployment are:</p>
+<ul>
+<li>Deployment Automation : Done using tools like Puppet, Chef, Scripts, Kubectl, AMIs etc.</li>
+<li>Test Automation :  </li>
+<li>Promotion Criteria, and Feedback Loop : Done using tools like Jenkins, Spinnaker etc.</li>
+</ul>
+<p></br>
+</br>
+</br>
+<img alt="" src="../images/cd.png" />
+</br>
+</br>
+</br></p>
+<h2 id="pipelines-and-branching-models">Pipelines and Branching Models</h2></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
