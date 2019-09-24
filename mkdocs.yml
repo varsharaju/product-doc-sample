@@ -1,0 +1,37 @@
+site_name: DevOps and Developer Productivity
+repo_url: https://github.com/varsharaju/devops
+edit_uri: edit/master/docs/
+
+nav:
+  - Solutions:
+    - CICD: product/cicd.md
+    - Build Automation: product/build.md
+    - Deploy Automation: product/deploy.md
+    - Infrastructure Provisioning: product/infrastructure.md
+    - Containerization and orchestration: product/containers.md
+    - Monitoring and High Availability: product/operations.md
+  - Partners:
+    - Jenkins: partners/jenkins.md
+    - Puppet: partners/puppet.md
+    - Chef: partners/chef.md
+    - AWS: partners/aws.md
+    - Kubernetes: partners/containers.md
+  - Customers:
+    - Traditional Data Center: projects/traditional.md
+    - CICD: projects/cicd.md
+    - Migrating to Cloud: projects/cloud-migration.md
+    - Containerization and Kubernetes: projects/docker.md
+  - Training:
+    - Presentations: training/presentations.md
+    - Videos: videos.md
+    - Tutorials: tutorials.md
+  - Support:
+    - Contact and Feedback: support/help.md
+
+theme:
+  name: simplex
+  #custom_dir: theme
+
+markdown_extensions:
+  - codehilite
+  - admonition
