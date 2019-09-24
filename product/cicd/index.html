@@ -53,99 +53,19 @@
 <li class="active">
     <a href="./">CICD</a>
 </li>
-                                    
-<li >
-    <a href="../build.md">Build Automation</a>
-</li>
-                                    
-<li >
-    <a href="../deploy.md">Deploy Automation</a>
-</li>
-                                    
-<li >
-    <a href="../infrastructure/">Infrastructure Provisioning</a>
-</li>
-                                    
-<li >
-    <a href="../containers/">Containerization and orchestration</a>
-</li>
-                                    
-<li >
-    <a href="../operations.md">Monitoring and High Availability</a>
-</li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../partners/jenkins.md">Jenkins</a>
-</li>
-                                    
-<li >
-    <a href="../../partners/puppet.md">Puppet</a>
-</li>
-                                    
-<li >
-    <a href="../../partners/chef.md">Chef</a>
-</li>
-                                    
-<li >
-    <a href="../../partners/aws.md">AWS</a>
-</li>
-                                    
-<li >
-    <a href="../../partners/containers.md">Kubernetes</a>
-</li>
-                                </ul>
+                            <li >
+                                <a href="../../partners/">Partners</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customers <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../projects/traditional.md">Traditional Data Center</a>
-</li>
-                                    
-<li >
-    <a href="../../projects/cicd.md">CICD</a>
-</li>
-                                    
-<li >
-    <a href="../../projects/cloud-migration.md">Migrating to Cloud</a>
-</li>
-                                    
-<li >
-    <a href="../../projects/docker.md">Containerization and Kubernetes</a>
-</li>
-                                </ul>
+                            <li >
+                                <a href="../../casestudies/">Customers</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Training <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../training/presentations/">Presentations</a>
-</li>
-                                    
-<li >
-    <a href="../../videos.md">Videos</a>
-</li>
-                                    
-<li >
-    <a href="../../tutorials.md">Tutorials</a>
-</li>
-                                </ul>
+                            <li >
+                                <a href="../../training/presentations/">Training</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../support/help/">Contact and Feedback</a>
-</li>
-                                </ul>
+                            <li >
+                                <a href="../../support/help/">Support</a>
                             </li>
                         </ul>
 
@@ -161,12 +81,12 @@
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../infrastructure/">
+                                <a rel="prev" href="../../partners/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/varsharaju/devops/edit/master/docs/product/cicd.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/varsharaju/product-doc-sample/edit/master/docs/product/cicd.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -180,6 +100,10 @@
             <li><a href="#continuous-integration">Continuous Integration</a></li>
             <li><a href="#continuous-delivery-and-deployment">Continuous Delivery and Deployment</a></li>
             <li><a href="#pipelines-and-branching-models">Pipelines and Branching Models</a></li>
+            <li><a href="#build-automation">Build automation</a></li>
+            <li><a href="#deploy-automation">Deploy automation</a></li>
+            <li><a href="#infrastructure-provisioning">Infrastructure provisioning</a></li>
+            <li><a href="#containerization-and-orchestration">Containerization and orchestration</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -227,7 +151,43 @@
 </br>
 </br>
 </br></p>
-<h2 id="pipelines-and-branching-models">Pipelines and Branching Models</h2></div>
+<h2 id="pipelines-and-branching-models">Pipelines and Branching Models</h2>
+<p>The size and complexity of code bases, number of developers and amount of automated testing available often drives the branching pattern used in release management of a software product. The CI/CD pipelines can be tailored to fit the branching needs of a development team.</p>
+<p>The recommended branching model to get maximum productivity and shortest release time is the master only model with feature flags.</p>
+<ul>
+<li>All commits on the main line go through build, deploy and test stages and are either dropped or queued up for production.</li>
+<li>For testing changes before merging/integrating to master, builds can also be triggered on pull request branches.</li>
+<li>Pull requests also allow for peer review before merging to master to keep the master healthy.</li>
+</ul>
+<p>This model works well for micro-services, small code bases, and small development teams that follow good agile, tdd, feature flag, and devops practices and which are on the cloud. This however, does not support monolithic code bases, large development teams with long standing releases, teams that do not have much automated testing, or teams that have limited environments/hardware in traditional data centers.</p>
+<p>Some branching models and pipelines associated are described below:</p>
+<p></br>
+ </br>
+ </br></p>
+<p><img alt="" src="../images/singlecodeline.png" /></p>
+<p></br>
+ </br>
+ </br></p>
+<p><img alt="" src="../images/multicodeline.png" /></p>
+<p></br></br></p>
+<h2 id="build-automation">Build automation</h2>
+<p></br>
+<strong> Coming Soon </strong>
+</br></p>
+<p></br></br></p>
+<h2 id="deploy-automation">Deploy automation</h2>
+<p></br>
+<strong> Coming Soon </strong>
+</br></p>
+<p></br></br></p>
+<h2 id="infrastructure-provisioning">Infrastructure provisioning</h2>
+<p></br>
+<strong> Coming Soon </strong>
+</br></p>
+<h2 id="containerization-and-orchestration">Containerization and orchestration</h2>
+<p></br>
+<strong> Coming Soon </strong>
+</br></p></div>
         </div>
 
         <footer class="col-md-12">
